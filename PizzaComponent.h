@@ -6,6 +6,7 @@
 class PizzaComponent {
     public:
         PizzaComponent(double price, std::string name);
+        virtual ~PizzaComponent() = default;
 
         virtual double getPrice() const;
         virtual std::string getName() const;

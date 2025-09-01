@@ -10,6 +10,7 @@
 class ToppingGroup: public PizzaComponent {
     public:
         ToppingGroup(double price, std::string name);
+        virtual ~ToppingGroup() = default;
 
         virtual std::string getName() const override;
         virtual double getPrice() const override;
